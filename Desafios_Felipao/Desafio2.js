@@ -1,22 +1,22 @@
-function calcularNivel(vitorias, derrotas) {
-    const saldoVitorias = vitorias - derrotas;
-    let nivel = "";
-    if (vitorias < 10) {
+function calcularNivel(quantidadeVitorias, quantidadeDerrotas) {
+    const saldoRankeadas = quantidadeVitorias - quantidadeDerrotas;
+    let nivel;
+    if (quantidadeVitorias < 10) {
         nivel = "Ferro";
-    } else if (vitorias >= 11 && vitorias <= 20) {
+    } else if (quantidadeVitorias >= 11 && quantidadeVitorias <= 20) {
         nivel = "Bronze";
-    } else if (vitorias >= 21 && vitorias <= 50) {
+    } else if (quantidadeVitorias >= 21 && quantidadeVitorias <= 50) {
         nivel = "Prata";
-    } else if (vitorias >= 51 && vitorias <= 80) {
+    } else if (quantidadeVitorias >= 51 && quantidadeVitorias <= 80) {
         nivel = "Ouro";
-    } else if (vitorias >= 81 && vitorias <= 90) {
+    } else if (quantidadeVitorias >= 81 && quantidadeVitorias <= 90) {
         nivel = "Diamante";
-    } else if (vitorias >= 91 && vitorias <= 100) {
+    } else if (quantidadeVitorias >= 91 && quantidadeVitorias <= 100) {
         nivel = "Lendário";
-    } else if (vitorias >= 101) {
+    } else if (quantidadeVitorias >= 101) {
         nivel = "Imortal";
     }
-    console.log("O Herói tem de saldo de " + saldoVitorias + " está no nível " + nivel + "."
+    console.log("O Herói tem de saldo de " + saldoRankeadas + " está no nível " + nivel + "."
 
     )
 }
