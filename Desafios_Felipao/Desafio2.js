@@ -1,5 +1,5 @@
-function calcularNivel(quantidadeVitorias, quantidadeDerrotas) {
-    const saldoRankeadas = quantidadeVitorias - quantidadeDerrotas;
+function calcularNivelDoRank(quantidadeVitorias, quantidadeDerrotas) {
+    const saldoDoRank = quantidadeVitorias - quantidadeDerrotas;
     let nivel;
     if (quantidadeVitorias < 10) {
         nivel = "Ferro";
@@ -16,8 +16,8 @@ function calcularNivel(quantidadeVitorias, quantidadeDerrotas) {
     } else if (quantidadeVitorias >= 101) {
         nivel = "Imortal";
     }
-    console.log("O Herói tem de saldo de " + saldoRankeadas + " está no nível " + nivel + "."
+    console.log("O Herói tem de saldo de " + saldoDoRank + " está no nível " + nivel + "."
 
     )
 }
-calcularNivel(25,5)
+calcularNivelDoRank(25,5)
